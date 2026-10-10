@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Coursera - Inicio</title>
+    <style>
+        /* Fondo azul muy clarito para toda la página */
+        body {background-color: #eef6ff; color: black; font-family: Arial, sans-serif; margin: 0; padding: 0;}       
+        /* Encabezado */
+        header {display: flex; justify-content: space-between; align-items: center; padding: 15px 30px;}        
+        /* Título Coursera en Azul */
+        h1 {color: #0056b3; margin: 0; display: inline;}
+        /* Enlaces/Botones de navegación */
+        nav a {margin-left: 15px; text-decoration: none; color: black; font-weight: bold;}
+        /* Estilos del área principal */
+        main {padding: 20px 30px;}
+        /* Sección de los 2 recuadros grandes lado a lado */
+        section {display: flex; gap: 20px; margin-bottom: 30px;}
+        /* Tarjeta 1 (Arriba): Negra con letra blanca */
+        section article:nth-child(1) {background-color: black; color: white; padding: 30px; border-radius: 15px; flex: 1;}
+        /* Tarjeta 2 (Arriba): Blanca con letra negra */
+        section article:nth-child(2) {background-color: white; color: black; padding: 30px; border-radius: 15px; flex: 1;}
+        /* Botón dentro de la tarjeta negra */
+        section article button {padding: 10px 20px; font-size: 16px; cursor: pointer;}
+        /* Botón azul de la tarjeta blanca */
+        section article button.azul {background-color: #0056b3; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;}
+        /* Tabla de cursos */
+        table {width: 100%; border-collapse: collapse;}
+        td {width: 33%; padding: 10px; vertical-align: top;}
+        /* Tarjetas con fondo blanco y letras negras dentro de la tabla */
+        td article {background-color: white; color: black; padding: 20px; border-radius: 10px;}
+        /* Pie de página */
+        footer {text-align: center; padding: 20px; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <h1>coursera</h1>
+            <input type="text" placeholder="¿Qué quieres aprender?">
+        </nav>
+        <nav>
+            <a href="registro.html">Regístrate</a>
+            <a href="iniciar_sesion.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <!-- Cuerpo Principal -->
+    <main>
+        <!-- 2 Recuadros grandes pegados uno al lado del otro -->
+        <section>
+            <article>
+                <h2>¡Aprende sin límites!</h2>
+                <p>Construye tu futuro aprendiendo habilidades en programación, diseño y mucho más desde la comodidad de tu casa.</p>
+                <a href="registro.html"><button>Regístrate gratis</button></a>
+            </article>
+            <article>
+                <h2>Impulsa tu carrera hoy</h2>
+                <p>Unete a miles de estudiantes que ya están transformando sus vidas con nuestros cursos especializados.</p>
+                <a href="iniciar_sesion.html"><button class="azul">Inicia sesión</button></a>
+            </article>
+        </section>
+        <!-- Subtítulo y Cursos -->
+        <h2>Cursos de moda</h2>
+        <!-- Tabla de 3 columnas sin bordes -->
+        <table>
+            <tr>
+                <td>
+                    <article>
+                        <h3>Introducción a Python</h3>
+                        <p>Aprende las bases del lenguaje de programación más popular y solicitado en el mercado actual.</p>
+                    </article>
+                </td>
+                <td>
+                    <article>
+                        <h3>Desarrollo Web Básico</h3>
+                        <p>Descubre cómo crear tus propias páginas web desde cero usando etiquetas HTML5 y estilos CSS3.</p>
+                    </article>
+                </td>
+                <td>
+                    <article>
+                        <h3>Bases de Datos MySQL</h3>
+                        <p>Conoce la forma correcta de organizar, almacenar y consultar la información de tus sistemas.</p>
+                    </article>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Práctica 8 | Desarrollo Web | Perez Hinostroza Cynthia Jacqueline</p>
+    </footer>
+</body>
+</html>

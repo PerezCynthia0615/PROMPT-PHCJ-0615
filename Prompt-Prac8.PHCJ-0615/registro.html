@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Coursera - Crear Cuenta</title>
+    <style>
+        /* Fondo azul muy clarito para toda la página */
+        body {background-color: #eef6ff;color: black;font-family: Arial, sans-serif;margin: 0;padding: 0;}
+        /* Encabezado */
+        header {display: flex;justify-content: space-between;align-items: center;padding: 15px 30px;}
+        /* Título Coursera en Azul */
+        h1 {color: #0056b3;margin: 0;}
+        /* Enlaces de navegación */
+        nav a {margin-left: 15px;text-decoration: none;color: black;font-weight: bold;}
+        /* Estilos simples del Formulario */
+        main {padding: 30px;max-width: 400px;margin: 0 auto;}
+        form {background-color: white;padding: 25px;border-radius: 10px;}
+        label {display: block;margin-top: 10px;font-weight: bold;}
+        input, select {width: 100%;padding: 8px;margin-top: 5px;box-sizing: border-box;}
+        button {margin-top: 20px;width: 100%;padding: 10px;background-color: #0056b3;color: white;border: none;border-radius: 5px;font-size: 16px;cursor: pointer;}
+        /* Pie de página */
+        footer {text-align: center;padding: 20px;margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <!-- Encabezado con enlace al Inicio -->
+    <header>
+        <h1>coursera</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="iniciar_sesion.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+    <!-- Formulario de Registro -->
+    <main>
+        <form>
+            <h2>Crear Cuenta</h2>
+            <label>Nombre Completo:</label>
+            <input type="text" placeholder="Ingresa tu nombre">
+            <label>Edad:</label>
+            <input type="number">
+            <label>Correo Electrónico:</label>
+            <input type="email" placeholder="correo@ejemplo.com">
+            <label>Contraseña:</label>
+            <input type="password">
+            <label>Fecha de Nacimiento:</label>
+            <input type="date">
+            <label>País:</label>
+            <select>
+                <option>México</option>
+                <option>Colombia</option>
+                <option>Argentina</option>
+                <option>España</option>
+                <option>Otro país</option>
+            </select>
+            <button type="submit">Regístrate gratis</button>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Práctica 8 | Desarrollo Web | Perez Hinostroza Cynthia Jacqueline</p>
+    </footer>
+</body>
+</html>
